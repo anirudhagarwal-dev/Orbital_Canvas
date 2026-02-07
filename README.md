@@ -50,8 +50,3 @@ Click the title on the bottom right to toggle fullscreen.
 - **`src/Effects.tsx`**: Post-processing effects pipeline.
 - **`src/UI.tsx`**: Overlay UI components.
 - **`src/test/`**: Unit tests configuration and files.
-
-## Credits
-
-Original concept by Anirudh Agarwal.
-Refactored and enhanced by Trae AI.
