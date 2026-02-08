@@ -1,8 +1,7 @@
-# 🌍 Orbital Canvas - Interactive 3D Globe
+# 🌐 Orbital Canvas - Interactive 3D Globe
 
-> A stunning, interactive 3D visualization experiment exploring the boundaries of web-based graphics with React, Three.js, and React Three Fiber.
+A stunning, interactive 3D visualization experiment exploring the boundaries of web-based graphics with React, Three.js, and React Three Fiber.
 
-![Project Banner](public/globe-grid.png)
 
 ## 📖 Overview
 
@@ -126,23 +125,6 @@ Once the application is running, you will see the globe and a control panel on t
 | | `DotScreen` | Applies a retro halftone newsprint effect. |
 
 **Pro Tip**: Click the **"Orbital Canvas"** title in the bottom right corner to toggle **Fullscreen Mode**.
-
----
-
-## 📂 Project Structure
-
-A quick look at how the code is organized:
-
-```
-src/
-├── 📄 main.tsx        # Application entry point
-├── 📄 App.tsx         # Main component, sets up the Canvas and Lights
-├── 📄 Globe.tsx       # The core 3D Globe component (Mesh & Material)
-├── 📄 Effects.tsx     # Configuration for Post-Processing effects
-├── 📄 UI.tsx          # 2D HTML Overlay (Title, Buttons)
-├── 📄 index.css       # Global styles
-└── 📁 test/           # Unit tests and setup files
-```
 
 ---
 
