@@ -45,7 +45,16 @@ function App() {
 
   return (
     <>
-      <Leva collapsed={false} />
+      <Leva 
+        collapsed={false} 
+        theme={{
+          colors: {
+            elevation1: 'rgba(0, 0, 0, 0.6)',
+            elevation2: 'rgba(20, 20, 20, 0.4)',
+            elevation3: 'rgba(40, 40, 40, 0.3)',
+          },
+        }}
+      />
       <UI fullscreen={fullscreen} toggleFullscreen={toggleFullscreen} />
       <Canvas
         camera={{ position: [0, 0, 3] }}
