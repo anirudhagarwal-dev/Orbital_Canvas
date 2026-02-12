@@ -5,3 +5,18 @@ body {
   font-family: 'Inter', sans-serif;
   color: white;
 }
+
+/* Leva Translucency */
+div[class*="leva-c-"] {
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  background-color: rgba(0, 0, 0, 0.4) !important;
+  border-radius: 8px;
+}
+
+/* Specific target for the collapsed handle/bar */
+div[class*="leva-c-"][class*="Root"] > div:first-child {
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  background-color: rgba(0, 0, 0, 0.4) !important;
+}
