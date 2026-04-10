@@ -258,7 +258,6 @@ body {
   border-radius: var(--radius-8);
 }
 
-/* Leva Translucency */
 div[class*="leva-c-"] {
   backdrop-filter: blur(12px) !important;
   -webkit-backdrop-filter: blur(12px) !important;
@@ -266,12 +265,12 @@ div[class*="leva-c-"] {
   border-radius: 8px;
 }
 
-/* Specific target for the collapsed handle/bar */
 div[class*="leva-c-"][class*="Root"] > div:first-child {
   backdrop-filter: blur(12px) !important;
   -webkit-backdrop-filter: blur(12px) !important;
   background-color: rgba(0, 0, 0, 0.4) !important;
 }
+<<<<<<< HEAD
 
 @media (max-width: 768px) {
   .h1 { font-size: 2rem; }
@@ -284,3 +283,5 @@ div[class*="leva-c-"][class*="Root"] > div:first-child {
   .h2 { font-size: 1.5rem; }
   .h3 { font-size: 1.125rem; }
 }
+=======
+>>>>>>> 1275e4ae89beb8d2bf491b589850fab28740a253
