@@ -8,31 +8,12 @@ interface UIProps {
 const UI: React.FC<UIProps> = ({ fullscreen, toggleFullscreen }) => {
   return (
     <>
-      <div style={{
-        position: 'absolute',
-        top: '20px',
-        left: '30px',
-        color: 'white',
-        fontFamily: 'Arial',
-        fontSize: '0.8rem',
-        zIndex: 10,
-        pointerEvents: 'none'
-      }}>
-        <h3>React Three Fiber + Globe</h3>
+      <div style={{ position: 'absolute', top: 20, left: 30, zIndex: 10, pointerEvents: 'none', color: 'var(--color-text)' }}>
+        <div className="h6">React Three Fiber + Globe</div>
       </div>
       
-      <div style={{
-        position: 'absolute',
-        bottom: '20px',
-        right: '30px',
-        color: 'white',
-        fontFamily: 'Arial',
-        fontSize: '0.8rem',
-        cursor: 'pointer',
-        zIndex: 10,
-        pointerEvents: 'auto'
-      }} onClick={toggleFullscreen}>
-        <h3>{fullscreen ? 'Fullscreen off' : 'Fullscreen on'}</h3>
+      <div style={{ position: 'absolute', bottom: 20, right: 30, zIndex: 10, pointerEvents: 'auto', color: 'var(--color-text)', cursor: 'pointer' }} onClick={toggleFullscreen} aria-label="Toggle fullscreen">
+        <div className="h6">{fullscreen ? 'Fullscreen off' : 'Fullscreen on'}</div>
       </div>
     </>
   )
