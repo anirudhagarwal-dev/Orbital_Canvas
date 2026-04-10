@@ -141,28 +141,6 @@ export const LazyImage = ({ src, alt, width, height }: { src: string; alt: strin
   )
 }
 
-export const ThemeToggle = () => {
-  const [theme, setTheme] = useState<'dark' | 'light'>('dark')
-  useEffect(() => {
-    const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
-    const stored = (localStorage.getItem('theme') as 'dark' | 'light' | null) || null
-    const initial = stored || (prefersDark ? 'dark' : 'light')
-    setTheme(initial)
-    document.documentElement.setAttribute('data-theme', initial)
-  }, [])
-  const toggle = () => {
-    const next = theme === 'dark' ? 'light' : 'dark'
-    setTheme(next)
-    document.documentElement.setAttribute('data-theme', next)
-    localStorage.setItem('theme', next)
-  }
-  return (
-    <div style={{ position: 'absolute', top: 20, right: 30, zIndex: 10 }}>
-      <Button variant="secondary" onClick={toggle} ariaLabel="Toggle theme">{theme === 'dark' ? 'Dark' : 'Light'}</Button>
-    </div>
-  )
-}
-
 export const StyleGuide = ({ onToast }: { onToast: (kind: ToastKind) => void }) => {
   const [name, setName] = useState('')
   const [error, setError] = useState<string | undefined>(undefined)
@@ -215,4 +193,3 @@ export const StyleGuide = ({ onToast }: { onToast: (kind: ToastKind) => void }) 
     </div>
   )
 }
-

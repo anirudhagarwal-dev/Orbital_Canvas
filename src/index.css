@@ -44,24 +44,6 @@
   --transition-slow: 300ms;
 }
 
-[data-theme="light"] {
-  --color-bg: #f8fafc;
-  --color-surface: #ffffff;
-  --color-surface-2: #f1f5f9;
-  --color-text: #0f172a;
-  --color-muted: #334155;
-  --color-border: #e2e8f0;
-  --color-primary: #0ea5e9;
-  --color-primary-contrast: #001018;
-  --color-secondary: #6366f1;
-  --color-secondary-contrast: #0b0e2e;
-  --color-accent: #f59e0b;
-  --color-success: #16a34a;
-  --color-warning: #d97706;
-  --color-error: #dc2626;
-  --color-info: #0ea5e9;
-}
-
 html {
   scroll-behavior: smooth;
 }

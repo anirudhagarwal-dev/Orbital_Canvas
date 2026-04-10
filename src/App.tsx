@@ -5,7 +5,7 @@ import { Leva, useControls } from 'leva'
 import Globe from './Globe'
 import Effects from './Effects'
 import UI from './UI'
-import { ThemeToggle, ToastProvider } from './DesignSystem'
+import { ToastProvider } from './DesignSystem'
 
 const Scene = () => {
   const { autoRotate, showStats, environment } = useControls('Scene', {
@@ -57,7 +57,6 @@ function App() {
         }}
       />
       <ToastProvider>
-        <ThemeToggle />
         <UI fullscreen={fullscreen} toggleFullscreen={toggleFullscreen} />
       </ToastProvider>
       <Canvas
